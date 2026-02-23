@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PetCalm — Privacy Policy</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #FAFCFB;
+      color: #2C3E50;
+      line-height: 1.6;
+      padding: 24px 16px 60px;
+    }
+
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+    .header-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: rgba(91,138,114,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .header-icon svg { color: #5B8A72; }
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #2C3E50;
+    }
+    .header-sub {
+      font-size: 0.78rem;
+      color: #5D6D7E;
+      margin-top: 2px;
+    }
+
+    /* Banner */
+    .banner {
+      background: rgba(91,138,114,0.08);
+      border: 1px solid rgba(91,138,114,0.25);
+      border-radius: 16px;
+      padding: 16px 18px;
+      margin-bottom: 20px;
+      font-size: 0.875rem;
+      color: #3D5F4D;
+      font-weight: 500;
+    }
+
+    /* Sections */
+    .section {
+      background: #fff;
+      border: 1px solid #e8edf2;
+      border-radius: 16px;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+    .section summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 18px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      list-style: none;
+      user-select: none;
+    }
+    .section summary::-webkit-details-marker { display: none; }
+    .section summary::after {
+      content: '▾';
+      font-size: 1rem;
+      color: #5D6D7E;
+      transition: transform 0.2s;
+    }
+    .section[open] summary::after {
+      transform: rotate(-180deg);
+    }
+    .section-body {
+      padding: 0 18px 16px;
+      font-size: 0.875rem;
+      color: #5D6D7E;
+      white-space: pre-line;
+      line-height: 1.7;
+      border-top: 1px solid #f0f3f5;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 36px;
+      font-size: 0.75rem;
+      color: #8899b4;
+    }
+    footer a { color: #5B8A72; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="header">
+      <div class="header-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        </svg>
+      </div>
+      <div>
+        <h1>Privacy Policy</h1>
+        <p class="header-sub">Your data stays on your device</p>
+      </div>
+    </div>
+
+    <div class="banner">
+      PetCalm is a privacy-first app. All your pet's data lives on your device only — we do not have servers that store your information.
+    </div>
+
+    <details class="section" open>
+      <summary>What Data We Collect</summary>
+      <div class="section-body">PetCalm stores the following data exclusively on your device: pet profile information (name, breed, age, photo), behavior incident logs, daily mood entries, training progress, schedule items, and reminders. No data is transmitted to our servers or any third party, except when you choose to use the AI Insights feature (see below).</div>
+    </details>
+
+    <details class="section">
+      <summary>How Data Is Stored</summary>
+      <div class="section-body">All app data is stored locally in your device's IndexedDB (a browser-based database). Your data never leaves your device unless you explicitly use AI Insights. You can delete all data at any time using the "Reset Pet &amp; Start Over" option in the Profile screen.</div>
+    </details>
+
+    <details class="section">
+      <summary>AI Insights &amp; Third-Party Services</summary>
+      <div class="section-body">When you tap "Generate AI Insights" in the Behavior Log screen, a summary of your recent behavior incidents (not photos or personally identifiable information) is sent to Google's Gemini API to generate training recommendations. This transmission is subject to Google's Privacy Policy. If you do not use AI Insights, no data is ever sent anywhere.</div>
+    </details>
+
+    <details class="section">
+      <summary>In-App Purchases &amp; Subscriptions</summary>
+      <div class="section-body">PetCalm offers optional Pro subscriptions processed through Google Play Billing. Purchase and billing information is handled entirely by Google Play — PetCalm does not collect or store any payment details. Subscription status is verified via RevenueCat, which receives only an anonymized app user ID. See Google's Privacy Policy and RevenueCat's Privacy Policy for details.</div>
+    </details>
+
+    <details class="section">
+      <summary>Pet Photos</summary>
+      <div class="section-body">If you upload a pet photo, it is converted to a base64 string and stored only in your device's local database. Photos are never uploaded to any server. You can remove the photo at any time by selecting an emoji avatar in the Profile screen.</div>
+    </details>
+
+    <details class="section">
+      <summary>Device Permissions</summary>
+      <div class="section-body">PetCalm may request the following permissions:
+
+• Notifications — to send reminder alerts you have scheduled. Notifications are generated locally on your device; no remote server is involved.
+
+• Camera / Photo Library — only if you choose to upload a pet photo. The image is stored locally and not uploaded.</div>
+    </details>
+
+    <details class="section">
+      <summary>Children's Privacy</summary>
+      <div class="section-body">PetCalm is not directed to children under 13. We do not knowingly collect any personal information from children.</div>
+    </details>
+
+    <details class="section">
+      <summary>Contact Us</summary>
+      <div class="section-body">If you have questions about this Privacy Policy, please contact us at:
+
+<a href="mailto:privacy@petcalm.app">privacy@petcalm.app</a>
+
+Last updated: February 2026</div>
+    </details>
+
+    <footer>
+      <p>&copy; 2026 PetCalm. All rights reserved.</p>
+    </footer>
+
+  </div>
+</body>
+</html>
